@@ -1,0 +1,17 @@
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Encriptado</label>
+      <input type="email" class="form-control" aria-describedby="emailHelp" [(ngModel)]="valueEncriptado" [ngModelOptions]="{standalone: true}">
+      <div id="emailHelp" class="form-text">{{encriptado}}</div>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="getEncriptado()">Encriptar</button>
+</form>
+<br>
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">DesEncriptado</label>
+      <input type="email" class="form-control"  aria-describedby="emailHelp" [(ngModel)]="valueDesEncriptado" [ngModelOptions]="{standalone: true}">
+      <div id="emailHelp" class="form-text">{{desEncriptado}}</div>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="getDesEncriptar()">DesEncriptar</button>
+</form>
